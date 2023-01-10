@@ -24,10 +24,11 @@ The backend automation was implemented using one more traditional approach (raw 
 Additionally, I added a couple validation on a postman request to have basic validations during manual testing and save time, the postman collection is on the root of the project with the name 'nord.postman_collection.json'
 
 ## Execution
-+ To execute the first task (API test), run the following command; 'npm run cypress:runTask1'
-+ To execute the second task (FE test), run the following command; 'npm run cypress:runTask2'
-+ To implement an example of the use of tags on the features, I split the FE test in 2 smaller test, to execute all FE tests run: 'npm run cypress:feTests'
-+ The cypress UI can be opened using the 'npx cypress open' command, on this interface you can open the 
+Before execute the command, install the dependencies with the 'npm install' command.
++ To execute the first task (API test), run the following command'npm run cypress:runTask1'.
++ To execute the second task (FE test), run the following command to headless execution 'npm run cypress:runTask2' or 'npm run cypress:runTask2withBrowser' to execute launching the browser.
++ I split the FE test in 2 smaller test to implement an example of the use of tags on the features, to run all FE tests on headless execute 'npm run cypress:feTests' or 'npm run cypress:feTestswithBrowser' to execute them launching the browser.
++ The cypress UI can be opened using the 'npx cypress open' command, on this interface you can decide which test execute.
 
 ## Notes
 + For the commands cypress:runTask2 and cypress:feTests (tests with gherkin), an html report is generated on this path: reports\cucumber-report.html\index.html and a video is saved on the videos folder

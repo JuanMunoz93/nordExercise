@@ -6,7 +6,9 @@
   "scripts": {
     "cypress:runTask1": "cypress run --config video=false --spec \"cypress/integration/apitest/insightApi.spec.js\"",
     "cypress:runTask2": "npx cypress-tags run -e TAGS=\"@Task2\" && node cucumber-html-report.js",
-    "cypress:feTests": "npx cypress-tags run -e TAGS=\"@FE\" && node cucumber-html-report.js"
+    "cypress:feTests": "npx cypress-tags run -e TAGS=\"@FE\" && node cucumber-html-report.js",
+    "cypress:runTask2withBrowser": "npx cypress-tags run --headed -e TAGS=\"@Task2\" && node cucumber-html-report.js",
+    "cypress:feTestswithBrowser": "npx cypress-tags run --headed -e TAGS=\"@FE\" && node cucumber-html-report.js"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,

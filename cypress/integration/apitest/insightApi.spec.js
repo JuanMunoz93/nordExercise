@@ -67,6 +67,7 @@ describe('Insigth API tests', () => {
         expect(apiResponse.body['ip']).to.match(/^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$/)
     });
 
+    //assumption: the endpoint is sending the country codes and names using the alpha-2 code (ISO 3166-1) standard
     it('Verify country code and name exists', () => {
         const countryName=getName(apiResponse.body['country_code']);
         const countryCode=getCode(apiResponse.body['country']);
@@ -75,6 +76,7 @@ describe('Insigth API tests', () => {
        assert.isDefined(countryCode,`the country name '${apiResponse.body['country']}' was not found in the ISO 3166-1-alpha-2 list of standardized country names`);
     });
 
+    //assumption: the endpoint is sending the country codes and names using the alpha-2 code (ISO 3166-1) standard
     it('Verify relation between country code and country name', () => {
         const countryName=getName(apiResponse.body['country_code']);
         assert.equal(apiResponse.body['country'], countryName,`the country_code '${apiResponse.body['country_code']}' belongs to ${countryName} and not to ${apiResponse.body['country']}`);
@@ -85,6 +87,7 @@ describe('Insigth API tests', () => {
         expect(apiResponse.body['latitude']).to.match(/^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$/)        
     });
 
+    //assumption: the endpoint is sending the country codes using the alpha-2 code (ISO 3166-1) standard
     it('Verify zipcode is valid for the received country', () => {
         const postalCodeExistsInCountry = postcodeValidator(apiResponse.body['zip_code'], apiResponse.body['country_code']);
         assert.isTrue(postalCodeExistsInCountry, 'The received zip code doesnt belongs to the received country')

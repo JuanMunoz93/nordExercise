@@ -13,7 +13,9 @@ This node project uses cypress as the main testing FW to automate FE and BE (API
 The frontend automation was implemented using BDD tests with 3 main logic layers. Its main responsibility are:
 
 1-Features: Contains the tests, they were wrote using gherkin language (cypress\integration\features\*.feature).
+
 2-Definitions: Connects the gherkin tests with its js implementation (cypress\integration\features\checkout\*.js).
+
 3-Pages: Allows interaction with web elements (cypress\integration\pages\*.js).
 
 Normally, it is necessary to have a layer between the definitions and the pages, something similar to a "business actions layer", having business-oriented actions improve code reuse, makes easier the maintenance tasks, and makes the project more readable. For this challenge, adding this layer will not add value but make the project bigger and more complex, so I skipped it.

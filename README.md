@@ -31,4 +31,5 @@ Before execute the command, install the dependencies with the 'npm install' comm
 + The cypress UI can be opened using the 'npx cypress open' command, on this interface you can decide which test execute.
 
 ## Notes
-+ For the commands cypress:runTask2 and cypress:feTests (tests with gherkin), an html report is generated on this path: reports\cucumber-report.html\index.html and a video is saved on the videos folder
++ For the commands cypress:runTask2 and cypress:feTests (tests with gherkin), an html report is generated on this path: reports\cucumber-report.html\index.html and a video is saved on the videos folder.
++ As the next improvements/implementations to the project, we can add an html report to the BE test and customize the FE report, configure a container to execute the tests (i.e. Docker), and add an external logger to have more information in case of failures.

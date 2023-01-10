@@ -1,7 +1,7 @@
 This project contains my solution to the tech task proposed by NordSecurity
 
 ## Overview
-In this node project was used cypress as a main testing fw to automate FE and BE (api) tests. These test are independent, but having both automations on the same project generates the oportunity to eventually create big testing flows or cover complete e2e scenarios.
+This node project uses cypress as the main testing FW to automate FE and BE (API) tests. These tests are independent, but having both automation on the same project generates the opportunity to eventually create big testing flows or cover complete e2e scenarios.
 
 + Ide used: vsCode
 + Language: JavaScript with Node (v19.0.0)
@@ -12,13 +12,11 @@ In this node project was used cypress as a main testing fw to automate FE and BE
 ### FE
 The frontend automation was implemented using BDD tests with 3 main logic layers. Its main responsibility are:
 
-1 Features: Contains the tests, they were wrote using gherkin language (cypress\integration\features\*.feature).
+1-Features: Contains the tests, they were wrote using gherkin language (cypress\integration\features\*.feature).
+2-Definitions: Connects the gherkin tests with its js implementation (cypress\integration\features\checkout\*.js).
+3-Pages: Allows interaction with web elements (cypress\integration\pages\*.js).
 
-2 Definitions: Connects the gherkin tests with its js implementation (cypress\integration\features\checkout\*.js).
-
-3 Pages: Allows interaction with web elements (cypress\integration\pages\*.js).
-
-Normally, it is necessary to have a layer between the definitions and the pages, something similar to an "business actions layer", having business oriented actions improve the code reuse, make easier the maintenance tasks, and make the project more readable. For this challenge, adding this layer will not add value but make the project bigger and more complex, so I skipped it.
+Normally, it is necessary to have a layer between the definitions and the pages, something similar to a "business actions layer", having business-oriented actions improve code reuse, makes easier the maintenance tasks, and makes the project more readable. For this challenge, adding this layer will not add value but make the project bigger and more complex, so I skipped it.
 
 ### BE
 The backend automation was implemented using one more traditional approach (raw test without gherkin). On this case, it is only one layer (cypress\integration\apitest\insightApi.spec.js) that contains the api consumption and the verifications. 

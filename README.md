@@ -23,7 +23,7 @@ Normally, it is necessary to have a layer between the definitions and the pages,
 ### BE
 The backend automation was implemented using one more traditional approach (raw test without gherkin). On this case, it is only one layer (cypress\integration\apitest\insightApi.spec.js) that contains the api consumption and the verifications. 
 
-Additionally, I added a couple validation on a postman request to have basic validations during manual testing and save time, the postman collection is on the root of the project with the name 'nord.postman_collection.json'
+Additionally, I added a couple validation on a postman request to have basic validations during manual testing and save time, the postman collection is on the root of the project with the name 'nord.postman_collection.json'. To execute it, you need to import the collection and run the request, the tests are executed automatically.
 
 ## Execution
 Before execute the command, install the dependencies with the 'npm install' command.

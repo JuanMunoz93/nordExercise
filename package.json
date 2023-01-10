@@ -1,0 +1,31 @@
+{
+  "name": "nordproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:runTask1": "cypress run --config video=false --spec \"cypress/integration/apitest/insightApi.spec.js\"",
+    "cypress:runTask2": "npx cypress-tags run -e TAGS=\"@Task2\" && node cucumber-html-report.js",
+    "cypress:feTests": "npx cypress-tags run -e TAGS=\"@FE\" && node cucumber-html-report.js"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "2.0.3",
+    "country-list": "2.3.0",
+    "cypress": "9.7.0",
+    "cypress-cucumber-preprocessor": "4.3.1",
+    "multiple-cucumber-html-reporter": "1.21.1",
+    "postcode-validator": "3.7.0"
+  }
+}

@@ -1,0 +1,231 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "purchase licenses site",
+    "line": 1,
+    "id": "purchase-licenses-site",
+    "tags": [],
+    "uri": "checkout.feature",
+    "elements": [
+      {
+        "id": "purchase-licenses-site;challenge",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Challenge",
+        "tags": [
+          {
+            "name": "@Task2",
+            "line": 3
+          },
+          {
+            "name": "@FE",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am in the nordsecurity products site",
+            "result": {
+              "status": "passed",
+              "duration": 493000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I select the nordvpn product",
+            "result": {
+              "status": "passed",
+              "duration": 487000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click on the login link",
+            "result": {
+              "status": "passed",
+              "duration": 1920000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I am redirected to the login site",
+            "result": {
+              "status": "passed",
+              "duration": 5015000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I go back to the product site",
+            "result": {
+              "status": "passed",
+              "duration": 939000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I select the one year license",
+            "result": {
+              "status": "passed",
+              "duration": 4390000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I continue to the payment",
+            "result": {
+              "status": "passed",
+              "duration": 524000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "The prices between the plan selection and checkout are the same",
+            "result": {
+              "status": "passed",
+              "duration": 1273000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "purchase-licenses-site;verify-login-redirect-on-plan-selection",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify login redirect on plan selection",
+        "tags": [
+          {
+            "name": "@FE",
+            "line": 14
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am in the nordsecurity products site",
+            "result": {
+              "status": "passed",
+              "duration": 613000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I select the nordvpn product",
+            "result": {
+              "status": "passed",
+              "duration": 605000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I click on the login link",
+            "result": {
+              "status": "passed",
+              "duration": 1711000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I am redirected to the login site",
+            "result": {
+              "status": "passed",
+              "duration": 1579000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "purchase-licenses-site;verify-prices-on-the-purchase-proces",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Verify prices on the purchase proces",
+        "tags": [
+          {
+            "name": "@FE",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I am in the nordsecurity products site",
+            "result": {
+              "status": "passed",
+              "duration": 512000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I select the nordvpn product",
+            "result": {
+              "status": "passed",
+              "duration": 522000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I select the one year license",
+            "result": {
+              "status": "passed",
+              "duration": 2608000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I continue to the payment",
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The prices between the plan selection and checkout are the same",
+            "result": {
+              "status": "passed",
+              "duration": 1399000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "1654c963-36df-4497-aca8-720430778eea",
+		"name": "nord",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6279537"
+	},
+	"item": [
+		{
+			"name": "nordApi",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"body response structure\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"response attributes not empty\", function () {\r",
+							"    pm.expect(pm.response.json().ip).length.greaterThan(0);\r",
+							"    pm.expect(pm.response.json().country).length.greaterThan(0);\r",
+							"    pm.expect(pm.response.json().country_code).length.greaterThan(0);\r",
+							"    pm.expect(pm.response.json().city).length.greaterThan(0);\r",
+							"    pm.expect(pm.response.json().isp).length.greaterThan(0);\r",
+							"    pm.expect(pm.response.json().state_code).length.greaterThan(0);\r",
+							"    pm.expect(pm.response.json().zip_code).length.greaterThan(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "city",
+						"value": "asd",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.nordvpn.com/v1/helpers/ips/insights",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nordvpn",
+						"com"
+					],
+					"path": [
+						"v1",
+						"helpers",
+						"ips",
+						"insights"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

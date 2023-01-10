@@ -1,0 +1,13 @@
+{
+    "env": {
+        "apiBaseUrl": "https://api.nordvpn.com",
+        "ecommBaseUrl": "https://nordcheckout.com"
+      },
+
+    "chromeWebSecurity": false,
+    "ignoreTestFiles": "*.anyExtension",
+    "testFiles": ["**/*.spec.js","**/*.feature"],
+    "viewportWidth": 1920,
+    "viewportHeight": 1080
+
+}

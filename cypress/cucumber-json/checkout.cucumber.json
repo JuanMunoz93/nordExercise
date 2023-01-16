@@ -31,7 +31,7 @@
             "name": "I am in the nordsecurity products site",
             "result": {
               "status": "passed",
-              "duration": 828000000
+              "duration": 869000000
             }
           },
           {
@@ -41,7 +41,7 @@
             "name": "I select the nordvpn product",
             "result": {
               "status": "passed",
-              "duration": 397000000
+              "duration": 915000000
             }
           },
           {
@@ -51,7 +51,7 @@
             "name": "I click on the login link",
             "result": {
               "status": "passed",
-              "duration": 2910000000
+              "duration": 1786000000
             }
           },
           {
@@ -61,7 +61,7 @@
             "name": "I am redirected to the login site",
             "result": {
               "status": "passed",
-              "duration": 3738000000
+              "duration": 2235000000
             }
           },
           {
@@ -71,7 +71,7 @@
             "name": "I go back to the product site",
             "result": {
               "status": "passed",
-              "duration": 809000000
+              "duration": 2042000000
             }
           },
           {
@@ -81,7 +81,7 @@
             "name": "I select the one year license",
             "result": {
               "status": "passed",
-              "duration": 1775000000
+              "duration": 2569000000
             }
           },
           {
@@ -91,7 +91,7 @@
             "name": "I continue to the payment",
             "result": {
               "status": "passed",
-              "duration": 665000000
+              "duration": 597000000
             }
           },
           {
@@ -101,7 +101,7 @@
             "name": "The prices between the plan selection and checkout are the same",
             "result": {
               "status": "passed",
-              "duration": 1500000000
+              "duration": 662000000
             }
           }
         ]
@@ -126,7 +126,7 @@
             "name": "I am in the nordsecurity products site",
             "result": {
               "status": "passed",
-              "duration": 764000000
+              "duration": 2358000000
             }
           },
           {
@@ -136,7 +136,7 @@
             "name": "I select the nordvpn product",
             "result": {
               "status": "passed",
-              "duration": 520000000
+              "duration": 2841000000
             }
           },
           {
@@ -146,7 +146,7 @@
             "name": "I click on the login link",
             "result": {
               "status": "passed",
-              "duration": 1881000000
+              "duration": 1105000000
             }
           },
           {
@@ -156,7 +156,7 @@
             "name": "I am redirected to the login site",
             "result": {
               "status": "passed",
-              "duration": 1607000000
+              "duration": 2142000000
             }
           }
         ]
@@ -181,7 +181,7 @@
             "name": "I am in the nordsecurity products site",
             "result": {
               "status": "passed",
-              "duration": 571000000
+              "duration": 1317000000
             }
           },
           {
@@ -191,7 +191,7 @@
             "name": "I select the nordvpn product",
             "result": {
               "status": "passed",
-              "duration": 370000000
+              "duration": 401000000
             }
           },
           {
@@ -201,7 +201,7 @@
             "name": "I select the one year license",
             "result": {
               "status": "passed",
-              "duration": 1549000000
+              "duration": 1769000000
             }
           },
           {
@@ -211,7 +211,7 @@
             "name": "I continue to the payment",
             "result": {
               "status": "passed",
-              "duration": 1577000000
+              "duration": 1627000000
             }
           },
           {
@@ -221,7 +221,7 @@
             "name": "The prices between the plan selection and checkout are the same",
             "result": {
               "status": "passed",
-              "duration": 573000000
+              "duration": 1517000000
             }
           }
         ]
